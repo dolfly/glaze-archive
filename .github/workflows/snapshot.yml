@@ -1,0 +1,23 @@
+name: snapshot
+
+on:
+  push:
+  workflow_dispatch:
+
+jobs:
+  macos:
+    # WKWebView snapshotting can only be verified on a real Mac: the macOS
+    # runner has a window server, so the scenario runs without a virtual display.
+    runs-on: macos-latest
+    steps:
+      - uses: actions/checkout@v5
+
+      - uses: actions/setup-go@v6
+        with:
+          go-version-file: go.mod
+
+      - name: build
+        run: go build ./...
+
+      - name: snapshot
+        run: go test -run 'TestSnapshot' -v ./...
