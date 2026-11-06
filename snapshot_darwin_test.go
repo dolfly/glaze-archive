@@ -90,6 +90,7 @@ func TestSnapshot(t *testing.T) {
 	if w == 0 || h == 0 || n == 0 {
 		t.Fatalf("empty capture: %s", got)
 	}
+	t.Logf("snapshot: %s", got)
 	if colors < 2 {
 		t.Fatalf("capture is blank (%d colour): %s", colors, got)
 	}
