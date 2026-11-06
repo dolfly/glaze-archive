@@ -4,7 +4,7 @@ import (
 	"errors"
 	"testing"
 
-	"github.com/crgimenes/glaze/menu"
+	"github.com/dolfly/glaze/menu"
 )
 
 // Both sentinels must wrap the standard errors.ErrUnsupported.

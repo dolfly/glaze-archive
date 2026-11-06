@@ -7,7 +7,7 @@ import (
 	"strings"
 	"testing"
 
-	"github.com/crgimenes/glaze"
+	"github.com/dolfly/glaze"
 )
 
 // withWindow loads GTK through a real glaze window, which the shortcut

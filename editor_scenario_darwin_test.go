@@ -4,7 +4,7 @@ import (
 	"testing"
 	"time"
 
-	"github.com/crgimenes/glaze/editor"
+	"github.com/dolfly/glaze/editor"
 	"github.com/ebitengine/purego/objc"
 )
 
